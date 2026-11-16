@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "S3 Main",
+            "request": "launch",
+            "mainClass": "s3.base.Main",
+            "cwd": "${workspaceFolder}",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "S3 Main (NWTR1 - com Town Hall)",
+            "request": "launch",
+            "mainClass": "s3.base.Main",
+            "cwd": "${workspaceFolder}",
+            "args": "-m maps/NWTR1.xml"
+        },
+        {
+            "type": "java",
+            "name": "S3 SEM A* (antes - para o video)",
+            "request": "launch",
+            "mainClass": "s3.base.Main",
+            "cwd": "${workspaceFolder}",
+            "vmArgs": "-Dastar.disabled=true",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "S3 IA vs IA (NWTR1)",
+            "request": "launch",
+            "mainClass": "s3.base.Main",
+            "cwd": "${workspaceFolder}",
+            "args": ["-m", "maps/NWTR1.xml", "-s", "2", "-p", "1|player1|ai-footmen-rush", "-p", "1|player2|ai-archers-rush"]
+        }
+    ]
+}
